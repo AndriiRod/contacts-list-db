@@ -3,8 +3,8 @@ import path from 'path';
 import { nanoid } from 'nanoid';
 
 const __dirname = import.meta.dirname;
-const dataPath = "/";
-  // path.join(__dirname,'..', 'db', 'contacts.json');
+const dataPath = path.join("/",'..', 'db', 'contacts.json');
+
 export const getAll = async () => {
   const data = await fs.readFile(dataPath);
   return JSON.parse(data);
