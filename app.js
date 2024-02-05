@@ -7,6 +7,8 @@ import DB_HOST from './config.js';
 
 import contactsRouter from "./routes/contactsRouter.js";
 
+const {DB_HOST} = process.env;
+
 const app = express();
 
 app.use(morgan("tiny"));
